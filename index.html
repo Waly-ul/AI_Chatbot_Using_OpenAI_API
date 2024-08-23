@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting system</title>
+    <!-- Bootstrap css -->
+     <link rel="stylesheet" href="bootstrap_css/bootstrap.css">
+
+     <!-- Custom css -->
+      <link rel="stylesheet" href="custom_css/style.css">
+</head>
+<body class="login_form_body">
+    
+    <div style="height: 100vh;" class="container d-flex justify-content-center align-items-center">
+
+            <div class="form_body row row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 d-sm-flex flex-column d-md-flex flex-md-row d-lg-flex flex-lg-row p-2 rounded-2">
+
+                <div class="col mb-3 mb-sm-3 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
+                    <img class="form_img img-fluid rounded-2" src="images/voting.jpg " alt="">
+                </div>
+
+                <div class="col">
+                    <h3 class="text-white mb-3 text-center">Login to your account!</h3>
+
+                    <form action="api/login.php" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="inputPassword5" class="form-label text-white">Password</label>
+                            <input type="password" name="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="inputPassword5" class="form-label text-white">Role</label>
+                            <select class="form-select" name="role" aria-label="Default select example">
+                                <option value="1">Voter</option>
+                                <option value="2">Group</option>
+                            </select>
+                        </div>
+
+                        <button id="loginbtn" type="submit" class="btn btn-success">Login</button>
+                        <button type="button" class="btn btn-danger"><a class="text-white text-decoration-none" href="routes/register.html">Create account</a></button>
+                    </form>
+                </div>
+            
+            </div>
+    </div>
+
+
+    <!-- Bootstrap js -->
+     <script src="bootstrap_js/bootstrap.bundle.js"></script>
+</body>
+</html>
