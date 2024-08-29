@@ -58,9 +58,9 @@ if ($_SESSION['userdata']['status'] == 0) {
         </div>
     </nav>
 
-    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 gx-5 d-sm-flex flex-column d-md-flex flex-md-row d-lg-flex flex-lg-row mb-5">
+    <div class="row  mb-5">
 
-        <div class="col profile_card p-2 rounded-2 mb-2 mb-sm-2 mb-md-2 mb-lg-0">
+        <div class="col-4 profile_card p-2 rounded-2 mb-2 mb-sm-2 mb-md-2 mb-lg-0">
 
             <div class="d-flex justify-content-center">
                 <img style="height: 100px; width: 100px;" class="img-fluid rounded-circle" src="../uploads/<?php echo $userdata['image']; ?>" alt="">
@@ -75,7 +75,10 @@ if ($_SESSION['userdata']['status'] == 0) {
 
         </div>
 
-        <div class="col result p-2 rounded-2 text-white d-flex flex-column">
+        <div class="col-1">
+
+        </div>
+        <div class="col-7 result p-2 rounded-2 text-white d-flex flex-column">
 
             <?php
             if ($_SESSION['groupsdata']) {
